@@ -6,7 +6,8 @@ import styled from "styled-components";
 const Container = styled.div`
 max-width: 1000px;
 margin: 3.5rem auto;
-box-shadow: 5px 5px 50px 10px  black;
+border-radius: .3rem;
+box-shadow: 5px 5px 50px 10px #4C4753;
 `;
 
 
@@ -28,11 +29,10 @@ const CardContainer = () => {
 
     return (
         <Container>
-            <h1>Nasa's Image of the Day</h1>
             <Card 
                 Key={nasaCard.date}
                 title={nasaCard.title}
-                image={nasaCard.url}
+                image={nasaCard.hdurl}
                 desc={nasaCard.explanation}
                 copyright={nasaCard.copyright}
             />    
