@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const CardImage = styled.img`
     width: 90%;
     border-radius: .5rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 `;
 
 const CardTitleContainer = styled.div `
