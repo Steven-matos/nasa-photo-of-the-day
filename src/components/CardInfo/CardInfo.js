@@ -5,7 +5,7 @@ const InfoContainer = styled.div`
 width: 800px;
 text-align: center;
 margin: 0 auto;
-padding-top: 2rem;
+padding: 1.5rem 0;
 
 `;
 
