@@ -5,10 +5,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
 max-width: 1000px;
-margin: 0 auto;
-box-shadow: 5px 5px 10px  black;
-
-
+margin: 3.5rem auto;
+box-shadow: 5px 5px 50px 10px  black;
 `;
 
 
