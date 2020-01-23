@@ -5,8 +5,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
 max-width: 1000px;
-margin: 3.5rem auto;
-border-radius: .3rem;
+margin: 3rem auto;
+border-radius: .5rem;
 box-shadow: 5px 5px 50px 10px #4C4753;
 `;
 
