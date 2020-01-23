@@ -1,6 +1,15 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 import Card from '../Card/Card';
+import styled from "styled-components";
+
+const Container = styled.div`
+max-width: 1000px;
+margin: 0 auto;
+box-shadow: 5px 5px 10px  black;
+
+
+`;
 
 
 const CardContainer = () => {
@@ -20,7 +29,7 @@ const CardContainer = () => {
     console.log(nasaCard);
 
     return (
-        <div>
+        <Container>
             <h1>Nasa's Image of the Day</h1>
             <Card 
                 Key={nasaCard.date}
@@ -29,7 +38,7 @@ const CardContainer = () => {
                 desc={nasaCard.explanation}
                 copyright={nasaCard.copyright}
             />    
-        </div>
+        </Container>
     );
 };
 
