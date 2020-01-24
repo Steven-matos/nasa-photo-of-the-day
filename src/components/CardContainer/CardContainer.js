@@ -31,9 +31,9 @@ const CardContainer = () => {
 
     const changeDate = e => {
         e.preventDefault();
-        let calender = e.target[0].value;
+        let calender = e.target.value;
         if (!moment(calender, 'YYYY-MM-DD').isValid()){
-            alert('Please enter a correct Date Format YYYY-MM_DD');
+            console.log('Please enter a correct Date Format YYYY-MM_DD');
         } else {
             setDate(calender);
         }

@@ -11,10 +11,12 @@ const CalenderContainer = styled.form `
 const CalenderInfo = (props) => {
     console.log(props)
     return (
-        <CalenderContainer onChange={props.changeDate}>
+        <CalenderContainer>
             <h4>See another date</h4>
-            <input type="text" data-role="calendarpicker"
-                data-input-format="%y/%m/%d" value={props.calenderDate} />
+            <input onChange={(e) => {
+                console.log("change date", e)
+                props.changeDate(e)
+            }} id="date.picker" type="date"  value={props.calenderDate} />
         </CalenderContainer>
     );
 };

@@ -16,7 +16,7 @@ const CardInfo = (props) => {
             <h2>{props.titleInfo}</h2>
             <p>{props.descInfo}</p>
             <CalenderInfo 
-                calenderDate={props.dateInfo}    
+                calenderDate={props.dateInfo}
                 changeDate={props.changeDate}        
              />
              <br/>
