@@ -9,3 +9,7 @@
 input:focus {
     outline:none;
 }
+
+body {
+  background:no-repeat center/180% url(./assets/Stars_Image.jpg);
+}

@@ -17,9 +17,14 @@ const CardTitleContainer = styled.div `
     }
 `;
 
+const CardContainer = styled.div `
+background-color: white;
+
+`;
+
 const Card = (props) => {
     return (
-        <div>
+        <CardContainer>
             <CardTitleContainer>
                 <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" alt="Nasa Logo"/>
                 <h1>Image of the Day!</h1>
@@ -32,7 +37,7 @@ const Card = (props) => {
                 dateInfo={props.date}
                 changeDate={props.changeDate}
             />
-        </div>
+        </CardContainer>
     );
 };
 

@@ -7,9 +7,8 @@ const NasaKey = process.env.REACT_APP_API_KEY
 
 const Container = styled.div`
 max-width: 1000px;
-margin: 3rem auto;
-border-radius: .5rem;
-box-shadow: 5px 5px 50px 10px #4C4753;
+margin: 7rem auto;
+box-shadow: 5px 5px 20px 20px black;
 `;
 
 
