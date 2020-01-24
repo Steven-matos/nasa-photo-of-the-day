@@ -3,6 +3,8 @@ import axios from 'axios';
 import Card from '../Card/Card';
 import styled from "styled-components";
 
+const NasaKey = process.env.REACT_APP_API_KEY
+
 const Container = styled.div`
 max-width: 1000px;
 margin: 3rem auto;
@@ -12,20 +14,30 @@ box-shadow: 5px 5px 50px 10px #4C4753;
 
 
 const CardContainer = () => {
+    const moment = require('moment');
+
     const [nasaCard, setNasaCard] = useState([]);
+    const [date, setDate] = useState(moment().format("YYYY-MM-DD"));
+
     useEffect(() => {
-        axios.get("https://api.nasa.gov/planetary/apod?api_key=eaCdXvdhcYLYoDbpsy0HdjT1rooeMEtfbfpiPKfT")
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=${NasaKey}&date=${date}`)
         .then(res => {
-            console.log(res.data)
             setNasaCard(res.data)
         })
         .catch(err => {
             console.error("You are getting an error of: ", err); 
         })
-    }, [])
-    
+    }, [date])
 
-    console.log(nasaCard);
+    const changeDate = e => {
+        e.preventDefault();
+        let calender = e.target[0].value;
+        if (!moment(calender, 'YYYY-MM-DD').isValid()){
+            alert('Please enter a correct Date Format YYYY-MM_DD');
+        } else {
+            setDate(calender);
+        }
+    }
 
     return (
         <Container>
@@ -35,6 +47,8 @@ const CardContainer = () => {
                 image={nasaCard.hdurl}
                 desc={nasaCard.explanation}
                 copyright={nasaCard.copyright}
+                date={nasaCard.date}
+                changeDate={changeDate}
             />    
         </Container>
     );

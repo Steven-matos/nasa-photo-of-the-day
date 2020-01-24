@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CalenderInfo from '../CalenderInfo/CalenderInfo';
  
 const InfoContainer = styled.div`
 width: 800px;
@@ -10,13 +11,16 @@ padding: 1.5rem 0;
 
 const CardInfo = (props) => {
 
-    console.log(props)
-
     return (
         <InfoContainer>
             <h2>{props.titleInfo}</h2>
             <p>{props.descInfo}</p>
-            <p>Image Copyright: {props.copyrightInfo}</p>
+            <CalenderInfo 
+                calenderDate={props.dateInfo}    
+                changeDate={props.changeDate}        
+             />
+             <br/>
+             <p>Image Copyright: <i>{props.copyrightInfo}</i></p>
         </InfoContainer>
     );
 };

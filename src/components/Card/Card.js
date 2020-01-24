@@ -29,6 +29,8 @@ const Card = (props) => {
                 descInfo={props.desc}
                 copyrightInfo={props.copyright}
                 titleInfo={props.title}
+                dateInfo={props.date}
+                changeDate={props.changeDate}
             />
         </div>
     );
