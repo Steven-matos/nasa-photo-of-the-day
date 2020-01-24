@@ -19,15 +19,20 @@ const CardTitleContainer = styled.div `
 
 const CardContainer = styled.div `
 background-color: white;
+`;
+
+const CardTitle = styled.h1 `
+    font-family: 'nasalization';
 
 `;
+
 
 const Card = (props) => {
     return (
         <CardContainer>
             <CardTitleContainer>
                 <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" alt="Nasa Logo"/>
-                <h1>Image of the Day!</h1>
+                <CardTitle>Image of the Day!</CardTitle>
             </CardTitleContainer>
             <CardImage src={props.image} alt="Nasa pic of the day" />
             <CardInfo 
