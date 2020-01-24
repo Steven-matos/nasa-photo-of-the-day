@@ -9,7 +9,6 @@ const CalenderContainer = styled.form `
 
 
 const CalenderInfo = (props) => {
-    console.log(props)
     return (
         <CalenderContainer>
             <h4>See another date</h4>
