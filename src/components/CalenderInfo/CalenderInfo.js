@@ -14,7 +14,6 @@ const CalenderInfo = (props) => {
         <CalenderContainer>
             <h4>See another date</h4>
             <input onChange={(e) => {
-                console.log("change date", e)
                 props.changeDate(e)
             }} id="date.picker" type="date"  value={props.calenderDate} />
         </CalenderContainer>
