@@ -7,6 +7,10 @@ width: 800px;
 text-align: center;
 margin: 0 auto;
 padding: 1.5rem 0;
+
+ @media(max-width: 768px) {
+    width: 300px;
+  }
 `;
 
 const CardInfo = (props) => {

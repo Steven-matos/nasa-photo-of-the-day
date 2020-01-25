@@ -9,6 +9,12 @@ const Container = styled.div`
 max-width: 1000px;
 margin: 7rem auto;
 box-shadow: 5px 5px 20px 20px black;
+
+     @media(max-width: 768px) {
+    max-width: 350px;
+    margin: 4rem auto;
+  }
+
 `;
 
 

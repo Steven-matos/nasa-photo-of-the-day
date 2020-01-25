@@ -11,5 +11,12 @@ input:focus {
 }
 
 body {
-  background:no-repeat center/180% url(./assets/Stars_Image.jpg);
+  background:no-repeat center/180% url(./assets/Stars_Image.jpg);  
 }
+
+@media(max-width: 768px) {
+
+  body {
+    background:no-repeat center/550% url(./assets/Stars_Image.jpg);
+  }
+  }
