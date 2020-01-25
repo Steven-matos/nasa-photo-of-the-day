@@ -15,12 +15,9 @@ const CardTitleContainer = styled.div `
     img {
         width: 15%;
         @media(max-width: 768px) {
-            width: 20%;
+            width: 30%;
     }
-
-    
-  }
-    
+  }  
 `;
 
 const CardContainer = styled.div `
@@ -29,6 +26,9 @@ background-color: white;
 
 const CardTitle = styled.h1 `
     font-family: 'nasalization';
+    @media(max-width: 768px) {
+            padding: 0 1.5rem;
+    }
 `;
 
 
