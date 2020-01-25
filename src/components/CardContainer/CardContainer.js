@@ -15,6 +15,10 @@ box-shadow: 5px 5px 20px 20px black;
     margin: 4rem auto;
   }
 
+  @media(max-width: 1080px) {
+    width: 850px;
+  }
+
 `;
 
 

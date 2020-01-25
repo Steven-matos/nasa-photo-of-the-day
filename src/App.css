@@ -13,10 +13,15 @@ input:focus {
 body {
   background:no-repeat center/180% url(./assets/Stars_Image.jpg);  
 }
-
-@media(max-width: 768px) {
+  @media(max-width: 1080px) {
 
   body {
-    background:no-repeat center/550% url(./assets/Stars_Image.jpg);
+    background:no-repeat center/245% url(./assets/Stars_Image.jpg);
+  }
+  }
+  @media(max-width: 768px) {
+
+  body {
+    background:no-repeat center/495% url(./assets/Stars_Image.jpg);
   }
   }
