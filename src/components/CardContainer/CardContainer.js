@@ -29,7 +29,7 @@ const CardContainer = () => {
     const [date, setDate] = useState(moment().format("YYYY-MM-DD"));
 
     useEffect(() => {
-        axios.get(`https://api.nasa.gov/planetary/apod?api_key=${NasaKey}&date=${date}`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=eaCdXvdhcYLYoDbpsy0HdjT1rooeMEtfbfpiPKfT&date=${date}`)
         .then(res => {
             setNasaCard(res.data)
         })
