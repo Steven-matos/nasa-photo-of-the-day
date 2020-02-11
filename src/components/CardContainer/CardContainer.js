@@ -10,17 +10,18 @@ position: absolute;
 left: 200px;
 text-align: center;
 max-width: 1000px;
-margin: 4rem auto;
-box-shadow: 5px 5px 30px 20px black;
-border-radius: 2px;
+margin: 3.5rem auto;
+box-shadow: 5px 5px 5px 5px black;
 
      @media(max-width: 768px) {
     max-width: 350px;
     margin: 4rem auto;
+    left: 130px;
   }
 
   @media(max-width: 1080px) {
     width: 850px;
+    left: 40px;
   }
 
 `;
