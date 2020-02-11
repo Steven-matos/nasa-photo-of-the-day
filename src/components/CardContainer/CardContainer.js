@@ -6,9 +6,13 @@ import styled from "styled-components";
 const NasaKey = process.env.REACT_APP_API_KEY
 
 const Container = styled.div`
+position: absolute;
+left: 200px;
+text-align: center;
 max-width: 1000px;
-margin: 7rem auto;
-box-shadow: 5px 5px 20px 20px black;
+margin: 4rem auto;
+box-shadow: 5px 5px 30px 20px black;
+border-radius: 2px;
 
      @media(max-width: 768px) {
     max-width: 350px;

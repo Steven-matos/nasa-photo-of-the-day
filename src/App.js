@@ -1,12 +1,16 @@
 import React from "react";
+import Background from './components/Background';
 import CardContainer from './components/CardContainer/CardContainer';
 import "./App.css";
 
+                  
+
 function App() {
   return (
-    <div className="App">
-      <CardContainer />
-    </div>
+    <>
+    <CardContainer/> 
+    <Background/>
+    </>
   );
 }
 

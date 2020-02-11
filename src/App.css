@@ -2,26 +2,10 @@
   box-sizing: border-box;
 }
 
-.App {
-  text-align: center;
-}
-
 input:focus {
     outline:none;
 }
 
 body {
-  background:no-repeat center/180% url(./assets/Stars_Image.jpg);  
+  background-color: #333333;
 }
-  @media(max-width: 1080px) {
-
-  body {
-    background:no-repeat center/245% url(./assets/Stars_Image.jpg);
-  }
-  }
-  @media(max-width: 768px) {
-
-  body {
-    background:no-repeat center/570% url(./assets/Stars_Image.jpg);
-  }
-  }
