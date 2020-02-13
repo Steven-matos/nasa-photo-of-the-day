@@ -23,7 +23,6 @@ box-shadow: 5px 5px 5px 5px black;
     width: 850px;
     left: 40px;
   }
-
 `;
 
 
